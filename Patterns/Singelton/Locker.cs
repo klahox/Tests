@@ -9,10 +9,13 @@ namespace Refactoring
 	public class Locker
 	{
 		private static Locker _singelton;
-		public string _whoAmI = "Klajdi";
+		public string _whoAmI = "whoKnows";
 		private Locker()
 		{
 		}
+
+		// ksahgxsgxjgasxgasjxashgxas
+		//jasjkahsh
 
 
 	

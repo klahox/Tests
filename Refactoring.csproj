@@ -104,6 +104,7 @@
     <Compile Include="RefExtractFactoryClass\MainExtractFactory.cs" />
     <Compile Include="Patterns\Singelton\Locker.cs" />
     <Compile Include="Patterns\Singelton\MainSingelton.cs" />
+    <Compile Include="Patterns\Singelton\WhatEver.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
