@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B10FB42-0FEB-4129-BEE0-387FE0203809}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Refactoring</RootNamespace>
+    <AssemblyName>Refactoring</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Patterns\Delegation\ClassA.cs" />
+    <Compile Include="Patterns\Delegation\InterfaceI.cs" />
+    <Compile Include="Patterns\Delegation\ClassB.cs" />
+    <Compile Include="Patterns\Delegation\ClassC.cs" />
+    <Compile Include="Patterns\Delegation\MainDelegation.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaDibujo.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaDibujarTipoA.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaDibujarTipoB.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaDibujarTipoC.cs" />
+    <Compile Include="Patterns\Strategy\CrearDibujos.cs" />
+    <Compile Include="Patterns\Strategy\MainStrategy.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaBorrado.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaBorradoRapido.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaBorradoLimpio.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaBorradoPorCapas.cs" />
+    <Compile Include="Patterns\Strategy\IEstrategiaCopiado.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaCopiadoHorizontal.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaCopiadoVertical.cs" />
+    <Compile Include="Patterns\Strategy\EstrategiaCopiadoPlano.cs" />
+    <Compile Include="Patterns\Strategy\Tipos.cs" />
+    <Compile Include="RefBreakDependecies\Before\AnimalFeedingServices.cs" />
+    <Compile Include="RefBreakDependecies\Before\Feeder.cs" />
+    <Compile Include="RefBreakDependecies\MainBreakDependencies.cs" />
+    <Compile Include="RefBreakDependecies\After\AnimalFeedingServiceAfter.cs" />
+    <Compile Include="RefBreakDependecies\After\IFeederService.cs" />
+    <Compile Include="RefBreakDependecies\After\FeederService.cs" />
+    <Compile Include="RefEncapsulateCollections\Order.cs" />
+    <Compile Include="RefMoveMethod\BankAccount.cs" />
+    <Compile Include="RefMoveMethod\AccountInterest.cs" />
+    <Compile Include="RefPullUpMethod\Vehicle.cs" />
+    <Compile Include="RefPullUpMethod\Car.cs" />
+    <Compile Include="RefPullUpMethod\Motocicle.cs" />
+    <Compile Include="RefPullUpMethod\Direction.cs" />
+    <Compile Include="RefSwichToStrategy\ClientCode.cs" />
+    <Compile Include="RefSwichToStrategy\State.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingInfo.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingInfoStrategy.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingCalculation\IShippingCalculation.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingCalculation\AlascaShippingCalculation.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingCalculation\AlbaniaShippingCalculation.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingCalculation\FranceShippingCalculation.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingCalculation\SpainShippingCalculation.cs" />
+    <Compile Include="RefSwichToStrategy\ShippingCalculation\SenegalShippingCalculation.cs" />
+    <Compile Include="RefExtractMethodObject\Before\OrderItem.cs" />
+    <Compile Include="RefExtractMethodObject\Before\Order.cs" />
+    <Compile Include="RefExtractMethodObject\After\OrderCalculator.cs" />
+    <Compile Include="RefExtractMethodObject\After\OrderAfter.cs" />
+    <Compile Include="RefExtractMethodObject\MainExtractMethodObject.cs" />
+    <Compile Include="Patterns\Factory\IFactoryProducts.cs" />
+    <Compile Include="Patterns\Factory\IMobile.cs" />
+    <Compile Include="Patterns\Factory\ILaptop.cs" />
+    <Compile Include="Patterns\Factory\ITablet.cs" />
+    <Compile Include="Patterns\Factory\SamsungFactory.cs" />
+    <Compile Include="Patterns\Factory\SonyFactory.cs" />
+    <Compile Include="Patterns\Factory\SonyLaptop.cs" />
+    <Compile Include="Patterns\Factory\SonyMobile.cs" />
+    <Compile Include="Patterns\Factory\SonyTablet.cs" />
+    <Compile Include="Patterns\Factory\SamsungLaptop.cs" />
+    <Compile Include="Patterns\Factory\SamsungMobile.cs" />
+    <Compile Include="Patterns\Factory\SamsungTablet.cs" />
+    <Compile Include="Patterns\Factory\MainFactory.cs" />
+    <Compile Include="RefExtractFactoryClass\IPoliceCarFactory.cs" />
+    <Compile Include="RefExtractFactoryClass\PoliceCar.cs" />
+    <Compile Include="RefExtractFactoryClass\PoliceCarFactory.cs" />
+    <Compile Include="RefExtractFactoryClass\PoliceCarController.cs" />
+    <Compile Include="RefExtractFactoryClass\MainExtractFactory.cs" />
+    <Compile Include="Patterns\Singelton\Locker.cs" />
+    <Compile Include="Patterns\Singelton\MainSingelton.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Patterns\" />
+    <Folder Include="Patterns\Strategy\" />
+    <Folder Include="RefBreakDependecies\" />
+    <Folder Include="RefBreakDependecies\Before\" />
+    <Folder Include="RefBreakDependecies\After\" />
+    <Folder Include="RefEncapsulateCollections\" />
+    <Folder Include="RefMoveMethod\" />
+    <Folder Include="RefPullUpMethod\" />
+    <Folder Include="RefSwichToStrategy\" />
+    <Folder Include="RefSwichToStrategy\ShippingCalculation\" />
+    <Folder Include="RefExtractMethodObject\" />
+    <Folder Include="RefExtractMethodObject\Before\" />
+    <Folder Include="RefExtractMethodObject\After\" />
+    <Folder Include="Patterns\Factory\" />
+    <Folder Include="RefExtractFactoryClass\" />
+    <Folder Include="Patterns\DependencyInjection\" />
+    <Folder Include="Patterns\ServiceLocator\" />
+    <Folder Include="Patterns\Singelton\" />
+    <Folder Include="Patterns\NullObject\" />
+    <Folder Include="Patterns\Reflection\" />
+  </ItemGroup>
+</Project>
